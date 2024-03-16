@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.title {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #3b3a3a;
+    color: white;
+}
+
+.catagory-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.catagory-container button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.catagory-container button:hover {
+    background-color: #555;
+}
+
+/* flexbox organize images */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container img {
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+/* add hover effects to the filter buttoms */
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+/* media query ensure gallery looks good on both desktop and mobile devices*/
+@media only screen and (max-width:1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    .image-container img {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    body {
+        font-size: 12px;
+    }
+
+    .title {
+        padding: 10px 0;
+    }
+
+    .catagory-container button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .image-container {
+        justify-content: flex-start;
+    }
+
+    .image-container img {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

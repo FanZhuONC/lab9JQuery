@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab9 Jquery Image Gallery</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="lab9.css">
+    <!-- css lightbox link -->
+    <link rel="stylesheet" href="lightbox/lightbox.css">
+    <!-- lightbox jquery link -->
+    <script src="lightbox/lightbox-plus-jquery.min.js"></script>
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- header blackground image -->
+        <img width="100%" src="image/header.png" alt="wdw">
+    </header>
+
+    <div class="title">
+        <!-- title-image gallery of disney world parks -->
+        <h1>Walt Disney World's Image Gallery</h1>
+    </div>
+
+    <section>
+        <!-- section for filters by category -->
+        <div class="catagory-container">
+            <button id="ak">Amimal Kingdom</button>
+            <button id="mk">Magic Kingdom</button>
+            <button id="ep">Epcot</button>
+            <button id="hs">Hollywood Studios</button>
+        </div>
+    </section>
+
+    <section>
+        <!-- section to display images -->
+        <div class="image-container">
+            <div class="ak">
+                <a href="image/ak1.png" data-lightbox="gallery" data-title="Expedition Everest" id="ak1-image"><img
+                        width="300px" height="300px" src="image/ak1-small.png" alt="ak1"></a>
+                <a href="image/ak2.png" data-lightbox="gallery" data-title="Avatar Flight of Passage"
+                    id="ak2-image"><img width="300px" height="300px" src="image/ak2-small.png" alt="ak2"></a>
+                <a href="image/ak3.png" data-lightbox="gallery" data-title="Kilimanjaro Safaris" id="ak3-image"><img
+                        width="300px" height="300px" src="image/ak3-small.png" alt="ak3"></a>
+                <a href="image/ak4.png" data-lightbox="gallery" data-title="Meet Favorite Disney Pals"
+                    id="ak4-image"><img width="300px" height="300px" src="image/ak4-small.png" alt="ak4"></a>
+            </div>
+            <div class="mk">
+                <a href="image/mk1.png" data-lightbox="gallery" data-title="Cinderella Castle" id="mk1-image"><img
+                        width="300px" height="300px" src="image/mk1-small.png" alt="mk1"></a>
+                <a href="image/mk2.png" data-lightbox="gallery" data-title="Space Mountain" id="mk2-image"><img
+                        width="300px" height="300px" src="image/mk2-small.png" alt="mk2"></a>
+                <a href="image/mk3.png" data-lightbox="gallery" data-title="Prince Charming Regal Carrousel"
+                    id="mk3-image"><img width="300px" height="300px" src="image/mk3-small.png" alt="mk3"></a>
+                <a href="image/mk4.png" data-lightbox="gallery" data-title="Haunted Mansion" id="mk4-image"><img
+                        width="300px" height="300px" src="image/mk4-small.png" alt="mk4"></a>
+            </div>
+            <div class="ep">
+                <a href="image/ep1.png" data-lightbox="gallery" data-title="Spaceship Earth" id="ep1-image"><img
+                        width="300px" height="300px" src="image/ep1-small.png" alt="ep1"></a>
+                <a href="image/ep2.png" data-lightbox="gallery" data-title="Turtle Talk With Crush" id="ep2-image"><img
+                        width="300px" height="300px" src="image/ep2-small.png" alt="ep2"></a>
+                <a href="image/ep3.png" data-lightbox="gallery" data-title="Soarin' Around the World"
+                    id="ep3-image"><img width="300px" height="300px" src="image/ep3-small.png" alt="ep3"></a>
+                <a href="image/ep4.png" data-lightbox="gallery" data-title="Test Truck" id="ep4-image"><img
+                        width="300px" height="300px" src="image/ep4-small.png" alt="ep4"></a>
+            </div>
+            <div class="hs">
+                <a href="image/hs1.png" data-lightbox="gallery" data-title="Tower of Terror" id="hs1-image"><img
+                        width="300px" height="300px" src="image/hs1-small.png" alt="hs1"></a>
+                <a href="image/hs2.png" data-lightbox="gallery" data-title="Rock 'n' Roller Coaster" id="hs2-image"><img
+                        width="300px" height="300px" src="image/hs2-small.png" alt="hs2"></a>
+                <a href="image/hs3.png" data-lightbox="gallery" data-title="Star Wars:Rise of the Resistance"
+                    id="hs3-image"><img width="300px" height="300px" src="image/hs3-small.png" alt="hs3"></a>
+                <a href="image/hs4.png" data-lightbox="gallery" data-title="Slinky Dog" id="hs4-image"><img
+                        width="300px" height="300px" src="image/hs4-small.png" alt="hs4"></a>
+            </div>
+        </div>
+    </section>
+    <script src="lab9.js"></script>
+</body>
+
+</html>
